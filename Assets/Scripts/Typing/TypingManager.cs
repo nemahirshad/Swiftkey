@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TypingManager : MonoBehaviour
 {
@@ -8,7 +10,13 @@ public class TypingManager : MonoBehaviour
 
 	public WordSpawner wordSpawner;
 
+	public List<BackgroundScoller> backgroundScollers;
+
 	public List<Word> words;
+
+	public string sceneName;
+
+	public bool intro;
 
 	private Word activeWord;
 
@@ -22,7 +30,7 @@ public class TypingManager : MonoBehaviour
 		AddWord();
     }
 
-    public void AddWord()
+	public void AddWord()
     {
 		if (sentenceSplitter.words.Count > wordIndex)
         {
@@ -30,6 +38,10 @@ public class TypingManager : MonoBehaviour
 
 			wordIndex++;
 			words.Add(word);
+		}
+		else
+		{
+			SceneManager.LoadScene(sceneName);
 		}
     }
 
@@ -40,6 +52,24 @@ public class TypingManager : MonoBehaviour
 			if (activeWord.GetNextLetter() == letter)
 			{
 				activeWord.TypeLetter();
+
+				if (!intro)
+				{
+					for (int i = 0; i < backgroundScollers.Count; i++)
+					{
+						backgroundScollers[i].ChangeSpeed(-0.01f);
+					}
+				}
+			}
+			else if (activeWord.GetNextLetter() != letter)
+			{
+				if (!intro)
+				{
+					for (int i = 0; i < backgroundScollers.Count; i++)
+					{
+						backgroundScollers[i].ChangeSpeed(0.1f);
+					}
+				}
 			}
 		}
 		else

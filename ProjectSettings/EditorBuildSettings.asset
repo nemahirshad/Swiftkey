@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Typing Mechanic.unity
+    path: Assets/Scenes/Playtest/Intro.unity
+    guid: f90ecf984a3e22a4fb8611b7409c4918
+  - enabled: 1
+    path: Assets/Scenes/Playtest/Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Playtest/Game Over.unity
+    guid: 85a67efacefc72c438f3b5c27b0a7662
   m_configObjects: {}
