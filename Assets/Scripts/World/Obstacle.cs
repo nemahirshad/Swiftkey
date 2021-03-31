@@ -8,6 +8,8 @@ public class Obstacle : MonoBehaviour
 
     public float speed = 10f;
 
+    AudioSource audioSource;
+
     Rigidbody2D rb;
 
     Vector2 screenBounds;
@@ -15,6 +17,7 @@ public class Obstacle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(-speed, 0);
 
@@ -34,6 +37,8 @@ public class Obstacle : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
+            audioSource.Play();
+
             for (int i = 0; i < typingManager.backgroundScollers.Count; i++)
             {
                 typingManager.backgroundScollers[i].ChangeSpeed(0.5f);

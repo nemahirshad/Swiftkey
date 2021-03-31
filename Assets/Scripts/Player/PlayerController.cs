@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public TypingManager typingManager;
+
+    public Slider slider;
 
     public float jumpVelocity = 5f;
 
@@ -22,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        slider.value = typingManager.backgroundScollers[0].scrollSpeed * -1;
+
         if (typingManager.backgroundScollers[0].stopped)
         {
             IsDead();

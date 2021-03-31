@@ -7,12 +7,13 @@ public class BackgroundScoller : MonoBehaviour
     public BoxCollider2D boxCollider;
     public Rigidbody2D rb;
     
+    public float scrollSpeed = -2f;
+    
     public int teleport;
 
     public bool stopped;
 
     private float width;
-    private float scrollSpeed = -2f;
 
     void Start()
     {
@@ -42,6 +43,11 @@ public class BackgroundScoller : MonoBehaviour
         {
             scrollSpeed = 0;
             stopped = true;
+        }
+
+        if (scrollSpeed <= -15f)
+        {
+            scrollSpeed = -15f;
         }
 
         rb.velocity = new Vector2(scrollSpeed, 0);

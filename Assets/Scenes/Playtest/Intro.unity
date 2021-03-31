@@ -335,6 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   words:
+  - Type me!
   - Ah hello there Player
   - Welcome to SwiftKey
   - This is a narrative centric typing game
