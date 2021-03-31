@@ -9,4 +9,9 @@ public class GameOverMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Intro");
     }
+    public void Exit()
+    {
+        Application.Quit();
+        Debug.Log("exit");
+    }
 }
