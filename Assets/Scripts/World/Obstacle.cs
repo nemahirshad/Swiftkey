@@ -39,6 +39,8 @@ public class Obstacle : MonoBehaviour
         {
             audioSource.Play();
 
+            typingManager.playerTrail.velocity.x -= 0.5f;
+
             for (int i = 0; i < typingManager.backgroundScollers.Count; i++)
             {
                 typingManager.backgroundScollers[i].ChangeSpeed(0.5f);

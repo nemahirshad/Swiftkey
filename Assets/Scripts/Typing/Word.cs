@@ -40,4 +40,17 @@ public class Word
 		return wordTyped;
 	}
 
+	public bool NextLetterAvailable()
+    {
+		if (typeIndex >= word.Length)
+        {
+			return false;
+        }
+		return true;
+    }
+
+	public void Typo()
+    {
+		display.ChangeColor();
+    }
 }

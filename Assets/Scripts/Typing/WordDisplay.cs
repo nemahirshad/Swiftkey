@@ -7,9 +7,8 @@ public class WordDisplay : MonoBehaviour
 {
 	public Text text;
 
-	public Color color;
-
-	public float moveSpeed;
+	public Color wordColor;
+	public Color typoColor;
 
 	public void SetWord(string word)
 	{
@@ -19,7 +18,7 @@ public class WordDisplay : MonoBehaviour
 	public void RemoveLetter()
 	{
 		text.text = text.text.Remove(0, 1);
-		text.color = color;
+		text.color = wordColor;
 	}
 
 	public void RemoveWord()
@@ -27,9 +26,8 @@ public class WordDisplay : MonoBehaviour
 		Destroy(gameObject);
 	}
 
-	private void Update()
-	{
-		transform.Translate(-moveSpeed * Time.deltaTime, 0f, 0f);
-	}
-
+	public void ChangeColor()
+    {
+		text.color = typoColor;
+    }
 }

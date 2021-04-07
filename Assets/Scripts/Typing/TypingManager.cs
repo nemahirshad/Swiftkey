@@ -3,12 +3,18 @@ using System.Collections.Generic;
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TypingManager : MonoBehaviour
 {
     public SentenceSplitter sentenceSplitter;
 
 	public WordSpawner wordSpawner;
+
+	public PlayerTrail playerTrail;
+
+	public Text typoText;
+	public Text comboText;
 
 	public List<BackgroundScoller> backgroundScollers;
 
@@ -18,11 +24,15 @@ public class TypingManager : MonoBehaviour
 
 	public bool intro;
 
-	private Word activeWord;
+	Word activeWord;
 
-	private int wordIndex;
+	float comboPower;
 
-	private bool hasActiveWord;
+	int comboCount;
+	int wordIndex;
+	int typoCounter;
+
+	bool hasActiveWord;
 
 	// Start is called before the first frame update
 	void Start()
@@ -30,7 +40,15 @@ public class TypingManager : MonoBehaviour
 		AddWord();
     }
 
-	public void AddWord()
+    void Update()
+    {
+		if (Input.GetKeyDown(KeyCode.Escape) && intro)
+		{
+			SceneManager.LoadScene(sceneName);
+		}
+	}
+
+    public void AddWord()
     {
 		if (sentenceSplitter.words.Count > wordIndex)
         {
@@ -55,20 +73,46 @@ public class TypingManager : MonoBehaviour
 
 				if (!intro)
 				{
+					comboCount++;
+					comboText.text = "Combo: " + comboCount;
+
+					comboPower = -0.0005f * comboCount;
+
+					playerTrail.velocity.x += 0.01f;
+
 					for (int i = 0; i < backgroundScollers.Count; i++)
 					{
-						backgroundScollers[i].ChangeSpeed(-0.01f);
+						backgroundScollers[i].ChangeSpeed(-0.01f + comboPower);
+					}
+				}
+
+				if (activeWord.NextLetterAvailable())
+                {
+					if (activeWord.GetNextLetter() == ' ')
+					{
+						activeWord.TypeLetter();
+						return;
 					}
 				}
 			}
-			else if (activeWord.GetNextLetter() != letter)
+			else if (activeWord.GetNextLetter() != letter && letter != ' ')
 			{
+				activeWord.Typo();
+
 				if (!intro)
 				{
 					for (int i = 0; i < backgroundScollers.Count; i++)
 					{
 						backgroundScollers[i].ChangeSpeed(0.1f);
 					}
+
+					playerTrail.velocity.x -= 0.1f;
+
+					comboCount = 0;
+					comboText.text = "Combo: " + comboCount;
+
+					typoCounter++;
+					typoText.text = "Typo Counter: " + typoCounter;
 				}
 			}
 		}
