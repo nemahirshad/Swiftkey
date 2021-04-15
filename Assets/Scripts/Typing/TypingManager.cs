@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,7 +15,7 @@ public class TypingManager : MonoBehaviour
 	public Text typoText;
 	public Text comboText;
 
-	public List<BackgroundScoller> backgroundScollers;
+	public List<BackgroundScoller> backgroundScrollers;
 
 	public List<Word> words;
 
@@ -80,9 +79,9 @@ public class TypingManager : MonoBehaviour
 
 					playerTrail.velocity.x += 0.01f;
 
-					for (int i = 0; i < backgroundScollers.Count; i++)
+					for (int i = 0; i < backgroundScrollers.Count; i++)
 					{
-						backgroundScollers[i].ChangeSpeed(-0.01f + comboPower);
+						backgroundScrollers[i].ChangeSpeed(-0.01f + comboPower);
 					}
 				}
 
@@ -101,9 +100,9 @@ public class TypingManager : MonoBehaviour
 
 				if (!intro)
 				{
-					for (int i = 0; i < backgroundScollers.Count; i++)
+					for (int i = 0; i < backgroundScrollers.Count; i++)
 					{
-						backgroundScollers[i].ChangeSpeed(0.1f);
+						backgroundScrollers[i].ChangeSpeed(0.1f);
 					}
 
 					playerTrail.velocity.x -= 0.1f;

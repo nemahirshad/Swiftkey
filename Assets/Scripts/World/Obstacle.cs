@@ -5,6 +5,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public TypingManager typingManager;
+    public RhythmManager rhythmManager;
 
     public float speed = 10f;
 
@@ -39,12 +40,25 @@ public class Obstacle : MonoBehaviour
         {
             audioSource.Play();
 
-            typingManager.playerTrail.velocity.x -= 0.5f;
-
-            for (int i = 0; i < typingManager.backgroundScollers.Count; i++)
+            if (typingManager)
             {
-                typingManager.backgroundScollers[i].ChangeSpeed(0.5f);
+                typingManager.playerTrail.velocity.x -= 0.5f;
+
+                for (int i = 0; i < typingManager.backgroundScrollers.Count; i++)
+                {
+                    typingManager.backgroundScrollers[i].ChangeSpeed(0.5f);
+                }
             }
+
+            if (rhythmManager)
+            {
+                rhythmManager.playerTrail.velocity.x -= 0.5f;
+
+                for (int i = 0; i < rhythmManager.backgroundScrollers.Count; i++)
+                {
+                    rhythmManager.backgroundScrollers[i].ChangeSpeed(0.5f);
+                }
+            }            
         }
     }
 }

@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public TypingManager typingManager;
+    public RhythmManager rhythmManager;
 
     public Slider slider;
 
@@ -26,11 +27,23 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        slider.value = typingManager.backgroundScollers[0].scrollSpeed * -1;
-
-        if (typingManager.backgroundScollers[0].stopped)
+        if (typingManager)
         {
-            IsDead();
+            slider.value = typingManager.backgroundScrollers[0].scrollSpeed * -1;
+            
+            if (typingManager.backgroundScrollers[0].stopped)
+            {
+                IsDead();
+            }
+        }
+        if (rhythmManager)
+        {
+            slider.value = rhythmManager.backgroundScrollers[0].scrollSpeed * -1;
+
+            if (rhythmManager.backgroundScrollers[0].stopped)
+            {
+                IsDead();
+            }
         }
 
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))

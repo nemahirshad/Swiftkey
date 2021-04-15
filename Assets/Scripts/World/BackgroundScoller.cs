@@ -8,8 +8,8 @@ public class BackgroundScoller : MonoBehaviour
     public Rigidbody2D rb;
     
     public float scrollSpeed = -2f;
-    
-    public int teleport;
+    public float teleport;
+    public float parallaxEffectMultiplier;
 
     public bool stopped;
 
@@ -23,12 +23,14 @@ public class BackgroundScoller : MonoBehaviour
         width = boxCollider.size.x;
         boxCollider.enabled = false;
 
+        scrollSpeed *= parallaxEffectMultiplier;
+
         rb.velocity = new Vector2(scrollSpeed, 0);
     }
 
     void Update()
     {
-        if (transform.position.x < -width* 3)
+        if (transform.position.x < -width * 2)
         {
             Vector2 resetPosition = new Vector2(width * teleport, 0);
             transform.position = (Vector2)transform.position + resetPosition;
@@ -50,6 +52,6 @@ public class BackgroundScoller : MonoBehaviour
             scrollSpeed = -15f;
         }
 
-        rb.velocity = new Vector2(scrollSpeed, 0);
+        rb.velocity = new Vector2(scrollSpeed * parallaxEffectMultiplier, 0);
     }
 }

@@ -383,9 +383,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceSplitter: {fileID: 1403429364}
   wordSpawner: {fileID: 1403429360}
-  backgroundScollers: []
+  playerTrail: {fileID: 0}
+  typoText: {fileID: 0}
+  comboText: {fileID: 0}
+  backgroundScrollers: []
   words: []
-  sceneName: Game
+  sceneName: Level 1
   intro: 1
 --- !u!4 &1403429363
 Transform:
