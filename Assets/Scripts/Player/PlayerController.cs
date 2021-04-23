@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        //Checks whether we have a typing manager or a rhythm manager to control the backgrounds and the HP
         if (typingManager)
         {
             slider.value = typingManager.backgroundScrollers[0].scrollSpeed * -1;
@@ -58,6 +59,7 @@ public class PlayerController : MonoBehaviour
         return raycastHit2d.collider != null;
     }
 
+    //Loads the Game over scene
     public void IsDead()
     {
         SceneManager.LoadScene("Game Over");

@@ -9,6 +9,7 @@ public class WordInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Get Keyboard Input
         foreach (char letter in Input.inputString)
         {
             tm.TypeLetter(letter);

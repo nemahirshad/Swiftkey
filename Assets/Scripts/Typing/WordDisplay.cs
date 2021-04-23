@@ -9,7 +9,8 @@ public class WordDisplay : MonoBehaviour
 
 	public Color wordColor;
 	public Color typoColor;
-
+	
+	//Word UI Stuff
 	public void SetWord(string word)
 	{
 		text.text = word;

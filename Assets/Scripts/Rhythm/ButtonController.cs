@@ -28,6 +28,7 @@ public class ButtonController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Checks if the correct arrow key is inside the box and you pressed the correct key
         if (Input.GetKeyDown(keyToPress))
         {
             spriteRenderer.color = pressedColor;
@@ -44,13 +45,14 @@ public class ButtonController : MonoBehaviour
                 rhythmManager.NoteHit();
             }
         }
-
+        
         if (Input.GetKeyUp(keyToPress))
         {
             spriteRenderer.color = defaultColor;
         }
     }
 
+    //Checks if there is a Note touching the box
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Note"))

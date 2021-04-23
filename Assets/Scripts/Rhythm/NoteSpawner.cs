@@ -20,6 +20,7 @@ public class NoteSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Spawns a note at a random time
         if (countdown <= 0)
         {
             GameObject a = Instantiate(prefab);

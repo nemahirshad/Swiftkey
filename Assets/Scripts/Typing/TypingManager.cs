@@ -41,6 +41,7 @@ public class TypingManager : MonoBehaviour
 
     void Update()
     {
+		//Skips intro
 		if (Input.GetKeyDown(KeyCode.Escape) && intro)
 		{
 			SceneManager.LoadScene(sceneName);
@@ -49,6 +50,7 @@ public class TypingManager : MonoBehaviour
 
     public void AddWord()
     {
+		//Adds the next sentence to the screen if there are sentences left
 		if (sentenceSplitter.words.Count > wordIndex)
         {
 			Word word = new Word(sentenceSplitter.words[wordIndex], wordSpawner.SpawnWord());
@@ -62,10 +64,12 @@ public class TypingManager : MonoBehaviour
 		}
     }
 
+	//Types each letter
 	public void TypeLetter(char letter)
 	{
 		if (hasActiveWord)
 		{
+			//If you type correctly increase speed and combo
 			if (activeWord.GetNextLetter() == letter)
 			{
 				activeWord.TypeLetter();
@@ -85,6 +89,7 @@ public class TypingManager : MonoBehaviour
 					}
 				}
 
+				//If next letter is a space skip it
 				if (activeWord.NextLetterAvailable())
                 {
 					if (activeWord.GetNextLetter() == ' ')
@@ -94,6 +99,7 @@ public class TypingManager : MonoBehaviour
 					}
 				}
 			}
+			//If you didn't type correctly then decrease speed and reset combo
 			else if (activeWord.GetNextLetter() != letter && letter != ' ')
 			{
 				activeWord.Typo();
@@ -115,6 +121,7 @@ public class TypingManager : MonoBehaviour
 				}
 			}
 		}
+		//If there is no sentence available get the next one in the list
 		else
 		{
 			foreach (Word word in words)
@@ -128,7 +135,7 @@ public class TypingManager : MonoBehaviour
 				}
 			}
 		}
-
+		//If finished sentence get next one
 		if (hasActiveWord && activeWord.WordTyped())
 		{
 			hasActiveWord = false;

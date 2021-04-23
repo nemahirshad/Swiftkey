@@ -30,6 +30,7 @@ public class Word
 		display.RemoveLetter();
 	}
 
+	//Check if the word was typed if yes then delete the word
 	public bool WordTyped()
 	{
 		bool wordTyped = (typeIndex >= word.Length);

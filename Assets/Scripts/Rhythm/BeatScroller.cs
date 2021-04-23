@@ -17,6 +17,7 @@ public class BeatScroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If you press a key then the beat notes start scrolling down
         if (!hasStarted)
         {
             if (Input.anyKeyDown)

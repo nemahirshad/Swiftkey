@@ -20,6 +20,7 @@ public class RhythmManager : MonoBehaviour
 	int comboCount;
 	int missedNotesCounter;
 
+	//Increase combo and speed if note hit
 	public void NoteHit()
     {
 		comboCount++;
@@ -35,6 +36,7 @@ public class RhythmManager : MonoBehaviour
 		}
 	}
 
+	//Decrease speed and reset combo if note missed
 	public void NoteMissed()
     {
 		for (int i = 0; i < backgroundScrollers.Count; i++)
