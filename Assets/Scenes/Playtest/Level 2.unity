@@ -4036,6 +4036,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6843390555886731305, guid: b06c8e9d710982e47bf1db8a2466565c, type: 3}
+      propertyPath: sceneName
+      value: 
+      objectReference: {fileID: 11400000, guid: b12ee4f2dac1d2547bb6b3e484cdb83d, type: 2}
+    - target: {fileID: 6843390555886731305, guid: b06c8e9d710982e47bf1db8a2466565c, type: 3}
       propertyPath: nextSceneName
       value: Interim Level
       objectReference: {fileID: 0}

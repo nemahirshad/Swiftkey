@@ -15,7 +15,6 @@ public class ButtonController : MonoBehaviour
 
     SpriteRenderer spriteRenderer;
 
-    bool pressed;
     bool canBePressed;
 
     // Start is called before the first frame update

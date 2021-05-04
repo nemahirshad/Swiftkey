@@ -72,6 +72,6 @@ public class PlayerController : MonoBehaviour
     //Loads the Game over scene
     public void IsDead()
     {
-        loadScene.LoadGameOverScene();             //Loads the Game Over Scene and ends the game.
+        loadScene.LoadGameOverScene();
     }
 }
