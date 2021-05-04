@@ -13,7 +13,7 @@ public class RhythmManager : MonoBehaviour
 
 	public List<BackgroundScoller> backgroundScrollers;
 
-	public string sceneName;
+	public LoadNewScene loadNextScene;
 
 	float comboPower;
 
@@ -33,6 +33,11 @@ public class RhythmManager : MonoBehaviour
 		for (int i = 0; i < backgroundScrollers.Count; i++)
 		{
 			backgroundScrollers[i].ChangeSpeed(-0.01f + comboPower);
+		}
+
+		if (comboCount == 20)
+		{
+			loadNextScene.LoadNextLevel();
 		}
 	}
 

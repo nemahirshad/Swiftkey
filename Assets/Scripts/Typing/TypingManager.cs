@@ -12,6 +12,8 @@ public class TypingManager : MonoBehaviour
 
 	public PlayerTrail playerTrail;
 
+	public LoadNewScene loadNextScene;
+
 	public Text typoText;
 	public Text comboText;
 
@@ -19,7 +21,7 @@ public class TypingManager : MonoBehaviour
 
 	public List<Word> words;
 
-	public string sceneName;
+	public AudioClip[] narratorVoiceLines;
 
 	public bool intro;
 
@@ -44,7 +46,7 @@ public class TypingManager : MonoBehaviour
 		//Skips intro
 		if (Input.GetKeyDown(KeyCode.Escape) && intro)
 		{
-			SceneManager.LoadScene(sceneName);
+			loadNextScene.LoadNextLevel();				//Loads the next level. 
 		}
 	}
 
@@ -55,14 +57,20 @@ public class TypingManager : MonoBehaviour
         {
 			Word word = new Word(sentenceSplitter.words[wordIndex], wordSpawner.SpawnWord());
 
+
+			AudioSource narratoraudio = GetComponent<AudioSource>();
+			narratoraudio.clip = narratorVoiceLines[wordIndex];
+			narratoraudio.Play();
+
+
 			wordIndex++;
 			words.Add(word);
 		}
 		else
 		{
-			SceneManager.LoadScene(sceneName);
+			loadNextScene.LoadNextLevel();              //Loads the next level. 
 		}
-    }
+	}
 
 	//Types each letter
 	public void TypeLetter(char letter)
@@ -74,6 +82,7 @@ public class TypingManager : MonoBehaviour
 			{
 				activeWord.TypeLetter();
 
+				//If It's Not The Intro Scene, increase Player Combo, Player Trail Speed and Background Scroll Speed for every correct letter typed =)
 				if (!intro)
 				{
 					comboCount++;
@@ -87,7 +96,7 @@ public class TypingManager : MonoBehaviour
 					{
 						backgroundScrollers[i].ChangeSpeed(-0.01f + comboPower);
 					}
-				}
+				}	   
 
 				//If next letter is a space skip it
 				if (activeWord.NextLetterAvailable())
@@ -104,6 +113,7 @@ public class TypingManager : MonoBehaviour
 			{
 				activeWord.Typo();
 
+				//If It's Not The Intro Scene, decrease Player Combo, Player Trail Speed and Background Scroll Speed for every correct letter typed =)
 				if (!intro)
 				{
 					for (int i = 0; i < backgroundScrollers.Count; i++)

@@ -206,6 +206,215 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &543522834
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: intro
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: backgroundScrollers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 57d061e1ff68d4b499b55b597c712784, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0637a2b83b162b548a458eef6bb48a66, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4bb838e5487fe8745983ffb6c8bc6cc2, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1855465bc6f697940a45160601ef7171, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6203df641d1c77d46af62db9c43f1d31, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 90a0321347a65864d8e6f8f019d183e9, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: c3a3bfbaf992cb54b9ffa6f39f613d1c, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 900857e45c799814790338dc5701bed3, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 75e96c203673e0d49b0c0eb684acc3df, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: d438c90f25bee06488e13ae7fb47bca9, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: d37beb1e67dcbea4f886ac571520cf45, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: aac544f51821c6f4cb8e5b5a68085efb, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1087f60416761364496534dd6dfe3593, type: 3}
+    - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: narratorVoiceLines.Array.data[13]
+      value: 
+      objectReference: {fileID: 8300000, guid: ffac2f2277b8819478bf3a0afc0b2834, type: 3}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[0]
+      value: Type me
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[1]
+      value: Ah hello there Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[2]
+      value: Welcome to SwiftKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[3]
+      value: This is a narrative centric typing game
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[4]
+      value: It is rather simple really
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[5]
+      value: All you have to do is help me narrate my story by typing it out
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[6]
+      value: To make things easy for you
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[7]
+      value: the text you are supposed to type will be visible on your screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[8]
+      value: Oh one last thing
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[9]
+      value: please try not to make any mistakes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[10]
+      value: Outside of this tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[11]
+      value: if you make too many mistakes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[12]
+      value: you will end up failing the game
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: words.Array.data[13]
+      value: Good Luck
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616805578155280034, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616805578155280034, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616805578155280034, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616805578155280034, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616805578155280034, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616805578155280034, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616805578155280034, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616805578155280034, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616805578155280034, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616805578155280034, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616805578155280034, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722713596984688104, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: sceneName
+      value: Level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722713596984688104, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: gameOverScene
+      value: Game Over
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722713596984688104, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: loadNextScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722713596984688104, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: nextSceneName
+      value: Level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284322305415093660, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: m_Name
+      value: TypingManagerPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855691908862988794, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: point
+      value: 
+      objectReference: {fileID: 1247714234}
+    - target: {fileID: 6855691908862988794, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
+      propertyPath: wordCanvas
+      value: 
+      objectReference: {fileID: 2034455704}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
 --- !u!1 &1104954141
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -114.1, y: 29.4}
+  m_AnchoredPosition: {x: -114.09985, y: 29.400024}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1104954143
@@ -320,114 +529,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.00024819, y: 0.0000076294}
   m_SizeDelta: {x: 461.1078, y: 251.9593}
   m_Pivot: {x: 0.50000054, y: 0.5}
---- !u!1 &1403429359
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1403429363}
-  - component: {fileID: 1403429364}
-  - component: {fileID: 1403429362}
-  - component: {fileID: 1403429361}
-  - component: {fileID: 1403429360}
-  m_Layer: 0
-  m_Name: TypingManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1403429360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403429359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d67a92376ea2784cba9c29c6331cb8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wordPrefab: {fileID: 7484104057046011137, guid: 0e31a602dc38cca40ae888573c953fc3, type: 3}
-  wordCanvas: {fileID: 2034455704}
-  point: {fileID: 1247714234}
-  offset: {x: 100, y: 0, z: 0}
---- !u!114 &1403429361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403429359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d3370e7db5a2db4a829e8f4fca97519, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tm: {fileID: 1403429362}
---- !u!114 &1403429362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403429359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27711b463c7943d44b7aefcca7cb31ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sentenceSplitter: {fileID: 1403429364}
-  wordSpawner: {fileID: 1403429360}
-  playerTrail: {fileID: 0}
-  typoText: {fileID: 0}
-  comboText: {fileID: 0}
-  backgroundScrollers: []
-  words: []
-  sceneName: Level 1
-  intro: 1
---- !u!4 &1403429363
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403429359}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1403429364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403429359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3c34135bf6d90a48bb951049d1c9c12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  words:
-  - Type me!
-  - Ah hello there Player
-  - Welcome to SwiftKey
-  - This is a narrative centric typing game
-  - It is rather simple really
-  - All you have to do is help me narrate my story by typing it out so I can then
-    read it
-  - You will also be able to see the text you are supposed to type out on your screen,
-    to make things easy for you
-  - Oh one last thing, try not to make any mistakes, else bad things will start to
-    happen
 --- !u!1 &1841027846
 GameObject:
   m_ObjectHideFlags: 0

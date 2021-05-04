@@ -10,19 +10,29 @@ public class PlayerController : MonoBehaviour
     public TypingManager typingManager;
     public RhythmManager rhythmManager;
 
+    public LoadNewScene loadScene;
+
     public Slider slider;
 
     public float jumpVelocity = 5f;
+
+    public string getActiveScene;
 
     [SerializeField] 
     private LayerMask GroundLayerMask;
     private Rigidbody2D rigidbody2d;
     private BoxCollider2D boxCollider2d;
 
+
     private void Awake()
     {
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
         boxCollider2d = transform.GetComponent<BoxCollider2D>();
+    }
+
+    public void GetCurrentScene()
+    {
+        getActiveScene = SceneManager.GetActiveScene().name;
     }
 
     private void Update()
@@ -62,6 +72,6 @@ public class PlayerController : MonoBehaviour
     //Loads the Game over scene
     public void IsDead()
     {
-        SceneManager.LoadScene("Game Over");
+        loadScene.LoadGameOverScene();             //Loads the Game Over Scene and ends the game.
     }
 }

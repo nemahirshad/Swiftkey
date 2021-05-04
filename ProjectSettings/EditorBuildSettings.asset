@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Playtest/Level 2.unity
     guid: 3859ab1a7c5694f44a473bc2d080e7d4
   - enabled: 1
-    path: Assets/Scenes/Playtest/Game Over.unity
+    path: Assets/Scenes/UI Scenes/Game Over.unity
     guid: 85a67efacefc72c438f3b5c27b0a7662
   m_configObjects: {}
