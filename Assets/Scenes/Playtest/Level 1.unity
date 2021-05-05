@@ -2551,6 +2551,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSceneName: Level 2
   gameOverScene: Game Over
+  creditsPanel: {fileID: 0}
+  creditsText: {fileID: 0}
+  playerController: {fileID: 0}
 --- !u!1 &1415688717
 GameObject:
   m_ObjectHideFlags: 0
@@ -3379,7 +3382,7 @@ PrefabInstance:
       objectReference: {fileID: 1071305177}
     - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: narratorVoiceLines.Array.size
-      value: 46
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: narratorVoiceLines.Array.data[0]
@@ -3572,39 +3575,39 @@ PrefabInstance:
     - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: narratorVoiceLines.Array.data[37]
       value: 
-      objectReference: {fileID: 8300000, guid: eef87341301eaa24a9b349e9b474dca3, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: narratorVoiceLines.Array.data[38]
       value: 
-      objectReference: {fileID: 8300000, guid: 0e45cc916c9e1284f8d0f5bf584ef85a, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: narratorVoiceLines.Array.data[39]
       value: 
-      objectReference: {fileID: 8300000, guid: 1daf49eae6786f54b841708969b49598, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: narratorVoiceLines.Array.data[40]
       value: 
-      objectReference: {fileID: 8300000, guid: aa0525f78de94f347b12661c8231e435, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: narratorVoiceLines.Array.data[41]
       value: 
-      objectReference: {fileID: 8300000, guid: 5bd2358a864160d42809fdd03b7356ac, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: narratorVoiceLines.Array.data[42]
       value: 
-      objectReference: {fileID: 8300000, guid: 69f8efbe4a72bd741a96343aaacf1051, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: narratorVoiceLines.Array.data[43]
       value: 
-      objectReference: {fileID: 8300000, guid: 7b66036a89b666c4bbf7f87e8699476e, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: narratorVoiceLines.Array.data[44]
       value: 
-      objectReference: {fileID: 8300000, guid: 6f65fc74b21409a40a97421805c4bbaf, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: narratorVoiceLines.Array.data[45]
       value: 
-      objectReference: {fileID: 8300000, guid: f658fc7532bac934e81704173d7e9261, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 508480196687300510, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: backgroundScrollers.Array.data[10]
       value: 
@@ -3619,7 +3622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: words.Array.size
-      value: 46
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 2860883345465343785, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: words.Array.data[0]

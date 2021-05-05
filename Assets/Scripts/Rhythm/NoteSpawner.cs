@@ -14,7 +14,9 @@ public class NoteSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        countdown = Random.Range(minRespawnTime, maxRespawnTime);
+        countdown = Random.Range(minRespawnTime, maxRespawnTime) + 13;
+        
+        //countdown = Random.Range(minRespawnTime, maxRespawnTime);
     }
 
     // Update is called once per frame
