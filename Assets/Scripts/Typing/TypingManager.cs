@@ -46,7 +46,8 @@ public class TypingManager : MonoBehaviour
 		//Skips intro
 		if (Input.GetKeyDown(KeyCode.Escape) && intro)
 		{
-			loadNextScene.LoadNextLevel();				//Loads the next level. 
+			//Loads the next level. 
+			loadNextScene.LoadNextLevel();
 		}
 	}
 
@@ -57,18 +58,17 @@ public class TypingManager : MonoBehaviour
         {
 			Word word = new Word(sentenceSplitter.words[wordIndex], wordSpawner.SpawnWord());
 
-
 			AudioSource narratoraudio = GetComponent<AudioSource>();
 			narratoraudio.clip = narratorVoiceLines[wordIndex];
 			narratoraudio.Play();
-
 
 			wordIndex++;
 			words.Add(word);
 		}
 		else
 		{
-			loadNextScene.LoadNextLevel();              //Loads the next level. 
+			//Loads the next level. 
+			loadNextScene.LoadNextLevel();
 		}
 	}
 
@@ -113,7 +113,7 @@ public class TypingManager : MonoBehaviour
 			{
 				activeWord.Typo();
 
-				//If It's Not The Intro Scene, decrease Player Combo, Player Trail Speed and Background Scroll Speed for every correct letter typed =)
+				//If It's not the Intro Scene, decrease Player Combo, Player Trail Speed and Background Scroll Speed for every correct letter typed =)
 				if (!intro)
 				{
 					for (int i = 0; i < backgroundScrollers.Count; i++)

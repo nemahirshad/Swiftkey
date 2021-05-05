@@ -2176,7 +2176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955f08442daba9340a5dbad4e45405aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typingManager: {fileID: 1403429362}
+  typingManager: {fileID: 4313728289958039839}
   rhythmManager: {fileID: 0}
   speed: 5
 --- !u!50 &1041396962
@@ -2550,7 +2550,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: Level 2
+  sceneName: {fileID: 0}
   gameOverScene: Game Over
+  creditsPanel: {fileID: 0}
+  creditsText: {fileID: 0}
+  playerController: {fileID: 0}
 --- !u!1 &1415688717
 GameObject:
   m_ObjectHideFlags: 0
@@ -3754,8 +3758,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3722713596984688104, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: sceneName
-      value: Level 2
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: b12ee4f2dac1d2547bb6b3e484cdb83d, type: 2}
     - target: {fileID: 3722713596984688104, guid: 69d3e372bf27c3b4dad54312936466e8, type: 3}
       propertyPath: gameOverScene
       value: Game Over

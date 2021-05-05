@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Playtest/Level 2.unity
     guid: 3859ab1a7c5694f44a473bc2d080e7d4
   - enabled: 1
+    path: Assets/Scenes/Playtest/Level 3.unity
+    guid: d9e37c5a8ffdbc84aae462b7afd7f49c
+  - enabled: 1
+    path: Assets/Scenes/Playtest/Level 4.unity
+    guid: 2c4049424049355449e9b65b54225da8
+  - enabled: 1
     path: Assets/Scenes/UI Scenes/Game Over.unity
     guid: 85a67efacefc72c438f3b5c27b0a7662
+  - enabled: 1
+    path: Assets/Scenes/Playtest/Interim Level.unity
+    guid: 4671a74ea444da743b7b6b42479fc610
   m_configObjects: {}
